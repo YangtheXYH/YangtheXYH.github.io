@@ -1,10 +1,10 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
   
-    <title>Archives: 2019 | Yang&amp;x.y.h</title>
+    <title>tags | Yang&amp;x.y.h</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Yiyang Wen">
@@ -13,13 +13,14 @@
     
     <meta name="description" content="计算机图形学(渲染)，游戏，音乐，电影">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Yang&amp;x.y.h">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="Yang&amp;x.y.h">
 <meta property="og:description" content="计算机图形学(渲染)，游戏，音乐，电影">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-08T10:41:46.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yang&amp;x.y.h">
+<meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="计算机图形学(渲染)，游戏，音乐，电影">
 
     
@@ -78,48 +79,21 @@
 </div>
       </header>
       <div id="container">
-        
-
+          
 <div class="archive-title">
-  <h2 class="archive-icon">2019</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">Jul 2019</a><span class="archive-list-count">2</span></li></ul>
- </div>
-  
+<h2 class="tag-icon">Tags</h2>
+
+<a data-src="/tags/Nirvana/" href="#Nirvana" title="Nirvana">Nirvana<sup>1</sup></a>
+
+<a data-src="/tags/歌词翻译/" href="#歌词翻译" title="歌词翻译">歌词翻译<sup>1</sup></a>
+
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2019/07/08/Nirvane-All apologies/" title="All apologies" itemprop="url">
-  
-
-    <time datetime="2019-07-08T07:21:07.000Z" itemprop="datePublished">2019-07-08</time>
-
-
-    <h1 itemprop="name">All apologies</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2019/07/08/hello-world/" title="Hello World" itemprop="url">
-  
-
-    <time datetime="2019-07-08T07:09:55.976Z" itemprop="datePublished">2019-07-08</time>
-
-
-    <h1 itemprop="name">Hello World</h1>
-
-  </a>
-</section>
-
-
-  </div>
+<div id="main" class="archive-part">
+<div class="all-list-box"></div>
 </div>
+
+
+
 
       </div>
       <footer><div id="footer">
@@ -217,6 +191,24 @@ $(document).ready(function(){
 
 
 
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var list    = $('.archive-title a'),
+      box     = $('.all-list-box'),
+      first   = $('.archive-title a:first-of-type');
+      box.load(first.attr('data-src').toString()+' #archive-page');
+      first.addClass('current');
+  list.each(function(){
+    $(this).click(function(){
+      var listSrc=$(this).attr('data-src').toString()+' #archive-page';
+      box.load(listSrc);
+      list.removeClass('current');
+      $(this).addClass('current');
+     });  
+    });
+  }); 
+</script>
 
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
